@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 # Model Load
-model = tf.keras.models.load_model("gender_model.h5")
+model = tf.keras.models.load_model("gender_classifier.keras")
 
 # Class Names
 classes = ["Female", "Male"]
