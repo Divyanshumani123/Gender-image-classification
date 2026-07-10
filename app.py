@@ -24,6 +24,7 @@ if uploaded_file is not None:
     # Image Preprocessing
     img = image.resize((128, 128))
     img = np.array(img) / 255.0
+    img = img.flatten() 
     img = np.expand_dims(img, axis=0)
 
     # Prediction
